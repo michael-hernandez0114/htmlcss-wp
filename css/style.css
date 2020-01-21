@@ -32,10 +32,9 @@ body {
     width: 100%;
     object-fit: cover;
     padding: 5px;
-
 }
 
-.header span {
+.header .text-center {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -46,11 +45,25 @@ body {
     font-size: 40px;
 }
 
+.header .text-bottom {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    padding-top: 5px;
+}
+
 .header-menu {
     background-color: brown;
     text-align: center;
     color: white;
     font-size: 12px;
+}
+
+ul a {
+    text-decoration: none;
+    color: inherit;
 }
 
 ul {
@@ -61,13 +74,17 @@ li {
     display: inline-block;
     padding: 10px 5px;
 }
-
+/*
 li:nth-child(1n+2) {
     border-left: 1px solid black;
 }
+*/
+li:hover {
+    background-color: rgba(255,255, 255, 0.2);
+}
 
 .aside {
-    width: 15%;
+    width: 20%;
     height: 100%;
     float: left;
 }
@@ -76,11 +93,14 @@ li:nth-child(1n+2) {
     width: 100%;
     text-align: left;
     background-color: white;
-
+    padding: 10px;
 }
 
-.main .content {
-    padding: 10px;
+.content a {
+    text-decoration: none;
+    color: green;
+    margin-bottom: 10px;
+    display: block;
 }
 
 h3 {
@@ -89,6 +109,7 @@ h3 {
 
 .fas {
     vertical-align: middle;
+    color: orange;
 }
 
 .aside-left-title {
@@ -106,7 +127,7 @@ h3 {
 }
 
 .main {
-    width: 70%;
+    width: 60%;
     height: 100%;
     float: left;
     padding: 0px 30px;
@@ -127,11 +148,8 @@ h3 {
 }
 
 .icon {
-
-
     display: inline-block;
     padding: 5% 15%;
-
 }
 
 .overlay {
@@ -140,5 +158,13 @@ h3 {
     right: 0;
     bottom: 0;
     left: 0;
+
+}
+
+.header .overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.footer .overlay {
     background-color: rgba(255, 255, 255, 0.8);
 }
