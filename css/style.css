@@ -27,31 +27,43 @@ body {
     position: relative;
 }
 
+.image-block {
+    height: 200px;
+    object-fit: cover;
+    padding: 5px;
+    position: relative;
+    background-image: url('https://organicthemes.com/demo/natural-lite/wp-content/themes/natural-lite/images/default-header.jpg');
+    text-align: center;
+}
+/*
 .header img {
     height: 200px;
     width: 100%;
     object-fit: cover;
     padding: 5px;
+}*/
+
+.fa-mountain {
+    color: white;
 }
 
-.header .text-center {
+.header .logo-block {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     color: white;
-    border: 5px solid white;
-    padding: 5px;
-    font-size: 40px;
+    text-align: center;
 }
 
-.header .text-bottom {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: white;
-    padding-top: 5px;
+.logo-block .text-center {
+    border: 5px solid white;
+    padding: 10px;
+    font-size: 50px;
+}
+
+.logo-block .text-bottom {
+    padding-top: 20px;
 }
 
 .header-menu {
@@ -107,7 +119,7 @@ h3 {
     padding-bottom: 20px;
 }
 
-.fas {
+.fa-rss-square {
     vertical-align: middle;
     color: orange;
 }
@@ -128,10 +140,8 @@ h3 {
 
 .main {
     width: 60%;
-    height: 100%;
     float: left;
     padding: 0px 30px;
-
 }
 
 .footer {
@@ -139,6 +149,7 @@ h3 {
     background-color: white;
     margin-top: 5px;
     position: relative;
+    text-align: center;
 }
 
 .barra-top {
@@ -148,8 +159,9 @@ h3 {
 }
 
 .icon {
-    display: inline-block;
-    padding: 5% 15%;
+    width: 33.33333%;
+    line-height: 100px;
+    float: left;
 }
 
 .overlay {
@@ -158,13 +170,7 @@ h3 {
     right: 0;
     bottom: 0;
     left: 0;
-
 }
-
-.header .overlay {
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
 .footer .overlay {
     background-color: rgba(255, 255, 255, 0.8);
 }
